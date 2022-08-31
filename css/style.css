@@ -7,7 +7,16 @@
 a {
     text-decoration: none;
 }
-/* Barra superior */
+ /* Barra superior */
+ .bg-barraDeWhatsapp {
+    background-color: #00072D;
+ }
+
+ .whatsapp {
+    right: 500px;
+ }
+
+ /*
 .barraSuperior {
     display: flex;
     height: 50px;
@@ -16,6 +25,8 @@ a {
 }
 
 /* Busqueda */
+
+/*
 .barraBusqueda {
     position: absolute;
     padding: 5px;
@@ -42,7 +53,7 @@ a {
     background: #0E6BA8;
     width: 30px;
     height: 30px;
-    line-height: 30px;
+    line-height: 18px;
     text-align: center;
     color: white;
     font-size: 15px;
@@ -56,9 +67,10 @@ a {
 
 .barraBusqueda input:focus {
     width: 240px;
-}
+} */
 
 /* Contactanos por WhatsApp*/
+/*
 .barraWhatsapp {
     display: flex;
     width: 100%;
@@ -75,13 +87,14 @@ a {
     font-style: italic;
     letter-spacing: 3px;
     color: white;
+    top: 5px;
 }
 
 .iconoWhatsapp {
     position: absolute;
-    top: 10px;
-    right: 740px;
-    font-size: 30px;
+    top: 0px;
+    right: 750px;
+    font-size: 25px;
     color: white;
 }
 
@@ -478,7 +491,7 @@ li {
     color: white;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 576px){
     /* Encabezado*/
     .encabezado {
         display: flex;
@@ -522,6 +535,15 @@ li {
         flex-direction: row;
         margin-left: -850px;
     }
+
+    .navbar a {
+        color: white;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
 
     /* Imagen principal */
     .imagenPrincipal {
@@ -673,3 +695,208 @@ li {
         background-color:#001C55;
     }
 }
+
+@media (min-width: 576px) and (max-width: 992px) {
+    /* Encabezado*/
+    .encabezado {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        background-color: #001C55 ;
+    }
+
+    .logotipoOptica {
+        gap: 1rem;
+        margin-left: 250px;
+    }
+    
+    .logo {
+        width: 90%;
+        height: 50px;
+    }
+    
+    .encabezadoTitulo {
+        font-size: 40px;
+        color: white;
+    }
+    
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        margin-left: 130px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    li {
+        color: white;
+    }
+    
+    .navbar {
+        flex-direction: row;
+        margin-left: -850px;
+    }
+
+    .navbar a {
+        color: white;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    /* Imagen principal */
+    .imagenPrincipal {
+        height: 500px;
+    }
+
+    /* Cards */
+    .novedades {
+        font-size: 25px;
+        right: 35%;
+    }
+    
+   /*  .card {
+        display: grid;
+        width: 100%;
+    }
+    
+    .cards {
+        padding: 80px;
+        background-color: #A6E1FA;
+        display: grid;
+        gap: 50px;
+    }
+    
+    .card__imagen {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card__div {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .card__titulo {
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+    
+    .card__descripcion {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+    }
+    
+    .card__boton {
+        background-color: aliceblue;
+        display: flex;
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+        line-height: 0px;
+        text-align: none;
+        margin-left: 0px;
+    } */
+    
+    /* Footer */
+    .footer {
+        background-color: #001C55;
+        max-width: 480px;
+        display: grid;
+        height: 100%;
+        padding: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    
+    .footer__lista {
+        display: none;
+    }
+    
+    .footer__texto {
+        display: none;
+    }
+    
+    .footer__logo {
+        height: 15vh;
+    }
+    
+    
+    /* Footer - Categorias */
+    .categorias {
+        border-left: 2px solid white;
+        margin-left: 20px;
+        padding: 30px;
+        padding-top: 5px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .categorias__lista {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .categorias__titulo {
+        font-size: 20px;
+    }
+    
+    .categorias__texto {
+        margin-top: 10px;
+        font-size: 11px;
+        font-family: 'Noto Sans', sans-serif;
+        gap: 50px;
+        color: white;
+    }
+    
+    /* Footer - Informacion */
+    
+    .informacion {
+        border-left: 2px solid white;
+        margin-left: 4.7%;
+        padding: 30px;
+        padding-top: 5px;
+        color: white;
+    }
+    
+    .informacion__lista {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .informacion__titulo {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    
+    .informacion__texto {
+        font-size: 11px;
+        font-family: 'Noto Sans', sans-serif;
+        display: flex;
+        gap: 15px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .pieDePagina {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color:#001C55;
+    }
+}
+    
