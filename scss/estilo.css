@@ -1,0 +1,275 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: #00072D;
+  color: white;
+}
+*::selection {
+  background-color: #00072D;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-barraDeWhatsapp {
+  background-color: #00072D;
+}
+
+.whatsapp {
+  right: 500px;
+}
+
+.encabezado {
+  background-color: white;
+  display: grid;
+  padding: 50px;
+  height: 100px;
+  grid-template-columns: 1fr 5fr;
+}
+.encabezado a {
+  color: #00072D;
+}
+
+.logotipoOptica {
+  height: 90px;
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  left: 200px;
+}
+.logotipoOptica .logo {
+  width: 100%;
+  height: 80px;
+}
+.logotipoOptica .encabezadoTitulo {
+  width: 800px;
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+}
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 100px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 250px;
+  margin-top: -25px;
+}
+.navbar .menu .menu__item {
+  text-decoration: none;
+}
+.navbar li {
+  color: #00072D;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.menu-bar {
+  background-color: #001C55;
+  text-align: center;
+  height: 30px;
+}
+.menu-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.menu-bar .menubarDesplegable {
+  display: inline-flex;
+  list-style: none;
+}
+.menu-bar .menubarDesplegable .paginasMenubar {
+  width: 120px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 10px;
+}
+.menu-bar .menubarDesplegable .paginasMenubar .sub-menu1 {
+  display: none;
+  list-style-type: none;
+}
+.menu-bar ul li:hover {
+  background-color: #00072D;
+}
+.menu-bar ul li:hover .sub-menu1 {
+  display: block;
+  position: absolute;
+  background-color: #00072D;
+  margin-top: 5px;
+  margin-left: -5px;
+  list-style-type: none;
+}
+.menu-bar ul li:hover .sub-menu1 ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li {
+  width: 120px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  background: transparent;
+  text-align: left;
+  font-size: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li a {
+  list-style-type: none;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child {
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu1 ul li a:hover {
+  color: #0E6BA8;
+}
+
+.slider {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+.slider .imagenesSlide {
+  display: flex;
+  width: 500%;
+  background-image: url(../img/modelo1.jpg);
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  -webkit-animation: animacion 40s infinite;
+          animation: animacion 40s infinite;
+}
+.slider .imagenesSlide .contenido {
+  position: relative;
+  bottom: -200px;
+  left: 60%;
+  padding: 50px;
+  z-index: 1;
+  max-width: 400px;
+}
+.slider .imagenesSlide .contenido h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 62px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 10px;
+}
+.slider .imagenesSlide .contenido p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+@-webkit-keyframes animacion {
+  20% {
+    background-image: url(../img/medelo5.jpg);
+    background-size: cover;
+  }
+  40% {
+    background-image: url(../img/modelo4.jpg);
+    background-size: cover;
+  }
+  60% {
+    background-image: url(../img/modelo3.jpg);
+    background-size: cover;
+  }
+  80% {
+    background-image: url(../img/modelo2.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(../img/modelo1.jpg);
+    background-size: cover;
+  }
+}
+@keyframes animacion {
+  20% {
+    background-image: url(../img/medelo5.jpg);
+    background-size: cover;
+  }
+  40% {
+    background-image: url(../img/modelo4.jpg);
+    background-size: cover;
+  }
+  60% {
+    background-image: url(../img/modelo3.jpg);
+    background-size: cover;
+  }
+  80% {
+    background-image: url(../img/modelo2.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(../img/modelo1.jpg);
+    background-size: cover;
+  }
+}
+
+.cards {
+  padding: 80px;
+  background-color: #A6E1FA;
+  display: flex;
+  gap: 50px;
+}
+.cards .novedades {
+  position: absolute;
+  height: 10px;
+  font-size: 30px;
+  top: 1000px;
+  right: 45%;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.cards .card {
+  display: grid;
+  background-color: #0A2472;
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 1;
+  box-shadow: 0px 10px 30px #00072D;
+  color: white;
+}
+.cards .card .card__imagen {
+  width: 100%;
+}
+.cards .card .card__div {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.cards .card .card__titulo {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.cards .card .card__descripcion {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.cards .card .card__boton {
+  background-color: aliceblue;
+  display: flex;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 170px;
+}/*# sourceMappingURL=estilo.css.map */
