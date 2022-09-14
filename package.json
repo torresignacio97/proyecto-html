@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1,
-    “scss”:“node-sass --watch scss -o css"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass --watch scss -o css"
   },
   "repository": {
     "type": "git",
-    "url": "https://https://github.com/torresignacio97/proyecto-html.git"
+    "url": "git+https://github.com/torresignacio97/proyecto-html.git"
   },
   "keywords": [],
   "author": "",
