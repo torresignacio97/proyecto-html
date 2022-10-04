@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 
     &::selection {
         background-color: $azulOscuro;
@@ -9,6 +10,15 @@
     }
 }
 
+body {
+    overflow-x: hidden;
+}
+    
+
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }

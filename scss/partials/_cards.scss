@@ -1,62 +1,104 @@
-.cards {
-    padding: 80px;
-    background-color: #A6E1FA;
+
+.novedades {
+    grid-area: item1;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 30px;
     display: flex;
-    gap: 50px;
-
-    .novedades {
-        position: absolute;
-        height: 10px;
-        font-size: 30px;
-        top: 1000px;
-        right: 45%;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 2px;
-        font-weight: 400;
-    }
-
-    .card {
-        display: grid;
-        background-color: #0A2472;
-        border-radius: 20px;
-        overflow: hidden;
-        flex: 1;
-        box-shadow: 0px 10px 30px #00072D;
-        color: white;
-
-        .card__imagen {
-            width: 100%;
-        }
-        
-        .card__div {
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        
-        .card__titulo {
-            font-size: 25px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-        }
-        
-        .card__descripcion {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 15px;
-        }
-        
-        .card__boton {
-            background-color: aliceblue;
-            display: flex;
-            width: 120px;
-            height: 30px;
-            border-radius: 10px;
-            line-height: 30px;
-            text-align: center;
-            margin-left: 170px;
-        }
-        
-    }
-    
+    position: relative;
+    left: 45%;
 }
+
+
+
+.cards-novedades {
+    background-color: rgb(250, 250, 250);
+    font-size: 14px;
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "item1"
+        "item2";
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    height: 100px;
+
+
+    .container {
+        grid-area: item2;
+        width: 1500px;
+        padding: 10px 40px;
+
+
+        
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            position: relative;
+            text-align: start;
+            font-size: 18px;
+            background: #fff;
+            box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+            border-bottom: 4px solid #0A2472;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .card-description {
+            padding: 1rem;
+        }
+
+        .card-title,
+        .card-text {
+            margin-bottom: 0.5rem;
+        }
+
+        .card-title h4 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card-text p {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        
+
+        .card-link {
+            text-align: center;
+            border-top: 1px solid rgb(223, 223, 223);
+            width: 272.5px;
+            margin-left: -16px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.swiper-button-next {
+    position: absolute;
+    right: 12%;
+    top: 127rem;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    left: 12%;
+    top: 127rem;
+}
+
