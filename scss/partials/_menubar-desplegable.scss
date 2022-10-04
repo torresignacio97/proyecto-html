@@ -1,7 +1,7 @@
 .menu-bar {
     background-color: $colorPrincipal;
     text-align: center;
-    height: 30px;
+    height: 35px;
 
     a {
         text-decoration: none;
@@ -9,34 +9,24 @@
         font-weight: bold;
     }
 
-    .menubarDesplegable {
-        display: inline-flex;
+    li {
         list-style: none;
-
-        .paginasMenubar {
-            width: 120px;
-            margin: 5px;
-            padding: 5px;
-            font-size: 10px;
-
-            .sub-menu1 {
-                display: none;
-                list-style-type: none;
-            }
-        }
-        
     }
 
     ul li:hover {
         background-color: $azulOscuro;
     }
 
-    ul li:hover .sub-menu1 {
+    ul li a:hover {
+        color: #0E6BA8;
+    }
+
+    ul li:hover .sub-menu {
         display: block;
         position: absolute;
         background-color: #00072D;
         margin-top: 5px;
-        margin-left: -5px;
+        margin-left: -7px;
         list-style-type: none;
 
         ul {
@@ -45,12 +35,14 @@
         }
 
         ul li {
-            width: 120px;
+            width: 198px;
             padding: 10px;
             border-bottom: 1px solid white;
             background: transparent;
             text-align: left;
             font-size: 10px;
+            list-style: none;
+            margin-left: -30px;
         }
         
         ul li a {
@@ -64,10 +56,22 @@
         ul li a:hover {
             color: #0E6BA8;
         }
+    } 
+}
 
+.menubarDesplegable {
+    display: inline-flex;
+
+    .paginasMenubar {
+        width: 220px;
+        padding: 7.8px;
+        margin-left: 5px;
+        font-size: 13px;
+
+        .sub-menu {
+            display: none;
+        }
     }
-
-    
 }
 
 

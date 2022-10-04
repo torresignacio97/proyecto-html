@@ -8,6 +8,7 @@
         width: 500%;
         background-image: url(../img/modelo1.jpg);
         background-size: cover;
+        background-position: 0%;
         height: 800px;
         width: 100%;
         animation: animacion 40s infinite;
@@ -42,7 +43,7 @@
 
     @keyframes animacion {
         20% {
-            background-image: url(../img/medelo5.jpg);
+            background-image: url(../img/modelo5.jpg);
             background-size: cover;
         }
     
@@ -66,6 +67,4 @@
             background-size: cover;
         }
     }
-    
-
 }
